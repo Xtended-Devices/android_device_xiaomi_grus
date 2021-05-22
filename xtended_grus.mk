@@ -7,10 +7,10 @@
 $(call inherit-product, device/xiaomi/grus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_grus
+PRODUCT_NAME := xtended_grus
 PRODUCT_DEVICE := grus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9 SE
@@ -23,3 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="grus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# MSM-Xtended
+DEVICE_MAINTAINERS="RDS_07"
+
